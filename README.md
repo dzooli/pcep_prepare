@@ -17,3 +17,8 @@ Created for management of the example and lesson codes.
 - snake.py
 
 ## Module 2
+- Operators
+- Literals
+- Variables
+- User input
+
