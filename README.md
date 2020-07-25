@@ -5,3 +5,15 @@ Learning and training myself for PCEP certification
 
 Created for management of the example and lesson codes.
 
+# Modules
+
+## Module 1
+- Compiler-Interpreter
+- Source code
+- Python origins
+- Python variants (CPython, JPython, PyPy)
+
+### Sources
+- snake.py
+
+## Module 2
