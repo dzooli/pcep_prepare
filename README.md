@@ -22,3 +22,11 @@ Created for management of the example and lesson codes.
 - Variables
 - User input
 
+### Keywords
+- positional arguments
+- keyword arguments
+- string multiplication
+- print: sep=, end=
+
+### Sources
+- lab2_1_1_*.py
