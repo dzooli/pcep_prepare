@@ -29,4 +29,4 @@ Created for management of the example and lesson codes.
 - print: sep=, end=
 
 ### Sources
-- lab2_1_1_*.py
+- lab2_*.py
