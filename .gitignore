@@ -109,6 +109,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+Scripts/
+Include/
 
 # Spyder project settings
 .spyderproject
@@ -129,4 +131,7 @@ dmypy.json
 .pyre/
 
 .idea/
-/pyvenv.cfg
+.vscode/
+pyvenv.cfg
+*.swp
+
