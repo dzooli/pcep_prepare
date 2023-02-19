@@ -53,3 +53,18 @@ Created for management of the example and lesson codes.
 ### Sources
 
 - module3/lab3\_\*.py
+
+## Module 4
+
+  - Exception handling
+  - Functions
+
+### Keywords
+
+- positional parameter
+- keyword parameter
+- multiple exception as tuple
+
+### Sources
+
+- relaunch/2023/src/part1_final_tictactoe.py
