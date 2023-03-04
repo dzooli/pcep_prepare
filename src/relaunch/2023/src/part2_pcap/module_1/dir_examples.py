@@ -2,7 +2,8 @@ import math
 
 print(dir(math))
 
-import random as rnd 
+# noinspection PyPep8
+import random as rnd
 
 try:
     print(dir(random))

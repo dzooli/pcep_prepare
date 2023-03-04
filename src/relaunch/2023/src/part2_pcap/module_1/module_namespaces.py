@@ -3,7 +3,7 @@ import math
 
 def sin(x):
     print("\nThis is my sin() function in the program's namespace.")
-    return (math.sin(x * (math.pi / 180.0)))
+    return math.sin(x * (math.pi / 180.0))
 
 
 if __name__ == "__main__":
