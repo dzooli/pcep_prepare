@@ -131,7 +131,9 @@ dmypy.json
 .pyre/
 
 .idea/
-.vscode/
+*/.vscode/
 pyvenv.cfg
 *.swp
+settings.json
 
+/src/relaunch/2023/.vscode/
