@@ -1,3 +1,15 @@
 {
-    "python.pythonPath": "C:\\Users\\fabia\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe"
+    "python.pythonPath": "C:\\Users\\fabia\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe",
+    "nuxt.isNuxtApp": false,
+    "MicroPython.syncButton": [
+        {
+            "text": "$(sync)",
+            "tooltip": "sync",
+            "alignment": "left",
+            "command": "extension.execute",
+            "priority": 4
+        }
+    ],
+    "python.analysis.typeCheckingMode": "basic",
+    "python.formatting.provider": "black"
 }
