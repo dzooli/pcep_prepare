@@ -22,7 +22,7 @@ def input_table():
     for line in range(9):
         valid_row = False
         while not valid_row:
-            row = input(f"Enter a valid table row [{line}]: ")
+            row = input(f"Enter table row [{line}] (valid: 9 12234numbers without separator): ")
             valid_row = validate_input_row(row)
             if valid_row:
                 table.append(row)
@@ -51,9 +51,10 @@ def clean_table():
 def check_table(tab: list) -> bool:
     res = [(len(set(row)) == 9) for row in tab]
     try:
-        return not res.index(False)
+        res.index(False)
     except ValueError:
         return True
+    return False
 
 
 def transpose_table(tab: list) -> list:
