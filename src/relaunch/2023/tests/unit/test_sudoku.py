@@ -1,4 +1,9 @@
 from unittest import TestCase
+import os
+import sys
+
+sys.path.append(os.path.join(os.path.dirname(__file__), "..\\..\\src"))
+sys.path.append(os.path.join(os.path.dirname(__file__), "../../src"))
 
 from part2_pcap.module_2 import sudoku
 
@@ -7,6 +12,7 @@ class Test(TestCase):
     VALID_TABLE_INPUT = '123456789987654321123123123123123123123122342343423455433453452423434598798798798'
     SHORT_TABLE_INPUT = '12345678998765432112312312312312312312312234234342345543345345242343459879879879'
     INVALID_TABLE_INPUT = 'a23456789987654321123123123123123123123122342343423455433453452423434598798798798'
+
 
     def setUp(self) -> None:
         sudoku.clean_table()
