@@ -4,13 +4,13 @@ from part2_pcap.module_2 import sudoku
 use_step_matcher("parse")
 
 
-@Then(u'Row count is 9')
+@Then("Row count is 9")
 def row_count(context):
     assert len(sudoku.table) == 9, "Invalid row count!"
 
 
-@Then(u'Each row contains 9 characters')
-def step_impl(context):
+@Then("Each row contains 9 characters")
+def rowlength_9(context):
     for row in range(9):
         if len(sudoku.table[row]) != 9:
             raise ValueError('All rows must contain 9 characters')
