@@ -1,3 +1,5 @@
+from math import exp
+
 try:
     a = 1 / 0
 except ZeroDivisionError:
@@ -7,7 +9,7 @@ try:
     a = 1 / 0
     print("not executed statement")
 except ArithmeticError:
-    print("arithmetic zero division - catched first as the parent of ZeroDivisionError")
+    print("arithmetic zero division - caught first as the parent of ZeroDivisionError")
 except ZeroDivisionError:
     print("concrete zero division")
 
@@ -21,7 +23,7 @@ except ArithmeticError:
 
 # The code prints subsequent
 # values of exp(k), k = 1, 2, 4, 8, 16, ...
-from math import exp
+
 ex = 1
 
 try:
@@ -31,6 +33,5 @@ try:
 except OverflowError:
     print('The number is too big.')
 
-var = 1
-assert var == 0
-
+my_var = 1
+assert my_var == 0
