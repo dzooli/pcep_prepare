@@ -13,9 +13,8 @@ class Test(TestCase):
     SHORT_TABLE_INPUT = '12345678998765432112312312312312312312312234234342345543345345242343459879879879'
     INVALID_TABLE_INPUT = 'a23456789987654321123123123123123123123122342343423455433453452423434598798798798'
 
-
     def setUp(self) -> None:
-        sudoku.clean_table()
+        sudoku.clean_table(sudoku.table)
 
     def test_validate_input_row_ok(self):
         res = sudoku.validate_input_row('123456789')
@@ -39,7 +38,7 @@ class Test(TestCase):
 
     def test_clean_table(self):
         sudoku.init_table(self.VALID_TABLE_INPUT)
-        sudoku.clean_table()
+        sudoku.clean_table(sudoku.table)
         self.assertEqual(len(sudoku.table), 0, "Table is not clean")
 
     def test_get_table_cell(self):

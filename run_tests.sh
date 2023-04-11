@@ -8,5 +8,5 @@ python -m unittest --verbose --buffer
 echo ''
 echo "Running functional tests..."
 cd ../functional || exit
-behavex -o ../test-results --logging-level DEBUG --tags ~@manual
+behavex -o ../test-results --logging-level WARNING --tags ~@manual
 
