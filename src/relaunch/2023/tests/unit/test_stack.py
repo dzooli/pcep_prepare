@@ -13,6 +13,7 @@ from part2_pcap.module_3.stack import Stack
 class TestStack(unittest.TestCase):
     def setUp(self) -> None:
         self.st = Stack()
+
     def test_add_element(self):
         self.st.push(1)
         self.assertEqual(len(self.st), 1)

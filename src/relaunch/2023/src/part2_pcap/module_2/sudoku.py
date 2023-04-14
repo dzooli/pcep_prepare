@@ -191,7 +191,7 @@ def validate_table(tab: list) -> bool:
     - Each row contains exactly one occurrence of the digits 1-9 using the check_table() function
     - Each column contains exactly one occurrence of the digits 1-9 by transposing the given table using the
       transpose_table() function and checking each row using the check_table() function
-    - Each 3x3 cell contains exactly one occurence of the digits 1-9 using the check_cells() function
+    - Each 3x3 cell contains exactly one occurrence of the digits 1-9 using the check_cells() function
 
     If none of the above checks fail, the function returns True indicating that the Sudoku table is valid,
     else it returns False indicating that the Sudoku table is invalid.

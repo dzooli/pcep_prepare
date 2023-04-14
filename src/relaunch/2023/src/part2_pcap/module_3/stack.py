@@ -3,7 +3,7 @@ from typing import List
 
 class Stack:
     def __init__(self):
-        self._items : List = []
+        self._items: List = []
 
     def empty(self) -> bool:
         try:
