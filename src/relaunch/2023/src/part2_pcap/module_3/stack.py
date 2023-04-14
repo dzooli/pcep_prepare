@@ -3,10 +3,13 @@ from typing import List
 
 class Stack:
     def __init__(self):
-        self._items : List = list()
+        self._items : List = []
 
     def empty(self) -> bool:
-        return self._items and len(self._items) > 0
+        try:
+            return len(self._items) == 0
+        except TypeError:
+            return True
 
     def __len__(self):
         if not self.empty():
