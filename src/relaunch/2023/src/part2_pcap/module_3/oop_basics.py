@@ -1,9 +1,11 @@
 from pprint import pprint
 
+
 class ExampleClass(object):
     __private_classvar = 1
     __classvar: str = 'hello'
     __attr__ = ['x', 'y']
+
     def __init__(self):
         self.x: int = 0
         self.y: int = 0
@@ -13,6 +15,7 @@ class ExampleClass(object):
     @classmethod
     def set_classvar(cls, val: str):
         cls.__classvar = val
+
 
 if __name__ == "__main__":
     my_example = ExampleClass()
@@ -25,4 +28,3 @@ if __name__ == "__main__":
     ExampleClass.set_classvar('alma')
     pprint(vars(my_example))
     pprint(vars(ExampleClass))
-
