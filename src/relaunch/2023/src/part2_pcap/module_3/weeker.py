@@ -20,7 +20,7 @@ class Weeker:
 if __name__ == "__main__":
     try:
         weeker = Weeker('Gux')
-    except:
+    except ValueError:
         pass
     weeker = Weeker()
     weeker.add_days(2)
