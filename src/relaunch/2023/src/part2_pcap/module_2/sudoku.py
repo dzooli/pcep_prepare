@@ -75,7 +75,7 @@ def init_table(data: str, row_len: int = 9) -> bool:
     if len(data) != 81:
         return False
     for row_idx in range(9):
-        row = data[row_idx*row_len:row_idx*row_len+9]
+        row = data[row_idx * row_len:row_idx * row_len + 9]
         valid_row = validate_input_row(row)
         if valid_row:
             table.append(row)
@@ -87,6 +87,7 @@ def init_table(data: str, row_len: int = 9) -> bool:
 def clean_table(tab: list = None) -> None:
     """
     This function clears the contents of a given list, allowing for a clean start.
+
     If no list is provided, the function will not take any actions.
 
      Arguments:
@@ -125,6 +126,7 @@ def check_table(tab: list) -> bool:
 def transpose_table(tab: list) -> list:
     """
     This function transposes a given Sudoku table by swapping its rows and columns.
+
     It does this by using the Python built-in function zip() to transpose the table
     and then appending each row to a new list. The rows of the new transposed table are returned as a list of strings.
 
@@ -157,7 +159,7 @@ def get_table_cell(tab: list, x: int = 0, y: int = 0) -> list:
      Returns:
     - A list of strings representing the contents of the 3x3 cell.
     """
-    return [''.join([row[(x*3):(x*3)+3] for row in tab[(y*3):(y*3)+3]])]
+    return [''.join([row[(x * 3):(x * 3) + 3] for row in tab[(y * 3):(y * 3) + 3]])]
 
 
 def check_cells(tab: list) -> bool:
@@ -189,7 +191,7 @@ def validate_table(tab: list) -> bool:
     - Each row contains exactly one occurrence of the digits 1-9 using the check_table() function
     - Each column contains exactly one occurrence of the digits 1-9 by transposing the given table using the
       transpose_table() function and checking each row using the check_table() function
-    - Each 3x3 cell contains exactly one occurence of the digits 1-9 using the check_cells() function
+    - Each 3x3 cell contains exactly one occurrence of the digits 1-9 using the check_cells() function
 
     If none of the above checks fail, the function returns True indicating that the Sudoku table is valid,
     else it returns False indicating that the Sudoku table is invalid.

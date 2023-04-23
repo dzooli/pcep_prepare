@@ -8,7 +8,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), "../../src"))
 from part2_pcap.module_2 import sudoku
 
 
-class Test(TestCase):
+class TestSudoku(TestCase):
     VALID_TABLE_INPUT = '123456789987654321123123123123123123123122342343423455433453452423434598798798798'
     SHORT_TABLE_INPUT = '12345678998765432112312312312312312312312234234342345543345345242343459879879879'
     INVALID_TABLE_INPUT = 'a23456789987654321123123123123123123123122342343423455433453452423434598798798798'
@@ -23,6 +23,9 @@ class Test(TestCase):
     def test_validate_input_row_notok(self):
         res = sudoku.validate_input_row('a23456789')
         self.assertEqual(res, False, "Invalid row marked as valid!")
+
+    def test_validate_input_row_short(self):
+        self.assertFalse(sudoku.validate_input_row('1234'))
 
     def test_init_table_ok(self):
         self.assertTrue(sudoku.init_table(self.VALID_TABLE_INPUT))
@@ -46,3 +49,4 @@ class Test(TestCase):
             self.VALID_TABLE_INPUT)
         cell1 = sudoku.get_table_cell(sudoku.table, 0, 0)
         self.assertEqual(cell1, ['123987123'], "Table cell retrieves and invalid cell")
+
