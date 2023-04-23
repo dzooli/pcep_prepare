@@ -1,0 +1,15 @@
+---
+!!python/object/apply:builtins.getattr
+- !!python/name:__main__.AppCell ''
+- hu
+
+!!python/object:__main__.App
+cells:
+- !!python/object/apply:builtins.getattr
+  - &id001 !!python/name:__main__.AppCell ''
+  - hu
+- !!python/object/apply:builtins.getattr
+  - *id001
+  - en
+name: ''
+value: ''
