@@ -1,8 +1,7 @@
 import os
 import sys
 import unittest
-import pytest
-from pytest import fixture
+
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "..\\..\\src"))
 sys.path.append(os.path.join(os.path.dirname(__file__), "../../src"))
