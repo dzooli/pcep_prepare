@@ -46,9 +46,6 @@ print('asdict() does not use repr')
 pprint(asdict(pilot))
 print('str() uses repr')
 pprint(str(pilot))
-
-for k, v in zip(pilot.keys(), pilot.values()):
-    print(k, v, sep=': ')
 print()
 
 print("Testing NormalPilot...")
