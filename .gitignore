@@ -140,3 +140,5 @@ settings.json
 test-results
 /src/relaunch/2023/src/bulma_test.html
 /src/relaunch/2023/src/part2_pcap/module_4/testfile.txt
+
+*.bin
