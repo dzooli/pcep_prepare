@@ -1,5 +1,5 @@
 from pprint import pprint
-from time import perf_counter, perf_counter_ns
+from time import perf_counter_ns
 
 inf_name = input("Enter the filename: ")
 chars = None
