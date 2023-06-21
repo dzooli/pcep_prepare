@@ -13,8 +13,9 @@ d1 = date.fromisoformat("2023-05-12")
 pprint(d1.ctime())
 pprint(d1.timetuple())
 pprint(d1.strftime("%Y-%m-%d-%H:%M:%S"))
+pprint(d1.strftime("%y/%B/%d %H:%M:%S"))  # %B is the month's full name
 
 print()
-weekdays = ['Hétfő', "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat", 'Vasárnap']
+weekdays = ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat", "Vasárnap"]
 print(f"Ma {weekdays[date.today().weekday()]} van.")
 print(f"Ma a hét {date.today().isoweekday()}. napja van.")

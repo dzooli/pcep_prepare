@@ -26,3 +26,5 @@ except FileNotFoundError as exc:
     pprint(exc)
 pprint(os.listdir())
 
+print(os.listdir(os.getcwd()))
+

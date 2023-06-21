@@ -10,10 +10,13 @@ class CountingCalendar(Calendar):
         result = set()
         for month in range(1, 13):
             for day in self.itermonthdays4(year, month):
-                if day[3] == weekday:
+                if day[3] == weekday and day[0] == year:
                     result.add(day)
         return len(result)
 
 
 mycal = CountingCalendar(calendar.MONDAY)
-print(mycal.count_weekday_in_year(2023, calendar.MONDAY))
+print(mycal.count_weekday_in_year(2019, 0))
+print(mycal.count_weekday_in_year(2000, 6))
+
+calendar.prmonth(2023, 6)
