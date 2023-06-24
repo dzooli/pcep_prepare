@@ -1,5 +1,6 @@
 from pprint import pprint
 from time import perf_counter_ns
+import sys
 
 inf_name = input("Enter the filename: ")
 chars = None
@@ -8,10 +9,10 @@ try:
         chars = inf.read()
 except FileNotFoundError:
     print("File not found")
-    exit()
+    sys.exit()
 except IOError as exc:
     pprint(exc)
-    exit()
+    sys.exit()
 
 # with bytearray
 print("\nCounting with bytearray indexes...")
