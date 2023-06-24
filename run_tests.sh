@@ -4,12 +4,11 @@ export PATH=$PATH:/usr/bin:/bin
 
 echo ''
 echo "Running unit tests..."
-cd src/relaunch/2023/tests//unit || exit
-pytest --junit-xml=../test-results/junit.xml --verbose
-#python -m unittest --verbose --buffer
+cd src/tests//unit || exit
+pytest --junit-xml=../test-results/unit/junit.xml --verbose
 
 echo ''
 echo "Running functional tests..."
 cd ../functional || exit
-behavex -o ../test-results --logging-level WARNING --tags ~@manual
+behavex -o ../test-results/functional --logging-level WARNING --tags ~@manual
 

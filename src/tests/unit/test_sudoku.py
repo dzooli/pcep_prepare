@@ -1,9 +1,9 @@
-from unittest import TestCase
 import os
 import sys
+from unittest import TestCase
 
-sys.path.append(os.path.join(os.path.dirname(__file__), "..\\..\\src"))
-sys.path.append(os.path.join(os.path.dirname(__file__), "../../src"))
+sys.path.append(os.path.join(os.path.dirname(__file__), "..\\..\\..\\src\\"))
+sys.path.append(os.path.join(os.path.dirname(__file__), "../../../src/"))
 
 from part2_pcap.module_2 import sudoku
 
@@ -49,4 +49,3 @@ class TestSudoku(TestCase):
             self.VALID_TABLE_INPUT)
         cell1 = sudoku.get_table_cell(sudoku.table, 0, 0)
         self.assertEqual(cell1, ['123987123'], "Table cell retrieves and invalid cell")
-

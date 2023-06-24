@@ -2,9 +2,8 @@ import os
 import sys
 import unittest
 
-
-sys.path.append(os.path.join(os.path.dirname(__file__), "..\\..\\src"))
-sys.path.append(os.path.join(os.path.dirname(__file__), "../../src"))
+sys.path.append(os.path.join(os.path.dirname(__file__), "..\\..\\..\\src\\"))
+sys.path.append(os.path.join(os.path.dirname(__file__), "../../../src/"))
 
 from part2_pcap.module_3.stack import Stack
 
